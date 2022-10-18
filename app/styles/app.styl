@@ -1,0 +1,48 @@
+import('sprites/*')
+import('helpers/svg-size')
+@import 'helpers/variables'
+@import 'helpers/mixins'
+@import 'helpers/fonts'
+@import 'helpers/optimize'
+
+import('../blocks/**/*')
+
+.top
+	position relative
+	z-index 2
+	background url('../../images/top-bg.png') #dbdbdb top no-repeat
+	background-size cover
+	overflow-x hidden
+
+	&::after
+		content ''
+		position absolute
+		bottom 0
+		left 50%
+		transform translateX(-50%)
+		width w(996)
+		height w(250)
+		background url('../../images/top-stars-1.png') no-repeat center
+		background-size cover
+
+	&::before
+		content ''
+		position absolute
+		bottom w(80)
+		left 0
+		width w(300)
+		height w(300)
+		background url('../../images/top-stars-2.png') no-repeat center
+		background-size cover
+
+	+below(768px)
+		background url('../../images/top-bg-mob.png') top no-repeat
+		background-size cover
+.bottom
+	position relative
+	margin-top w(-170)
+	z-index 1
+	background linear-gradient(#dedede, #dfdfdf);
+
+.wow
+	visibility hidden

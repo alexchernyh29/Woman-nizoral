@@ -1,0 +1,23 @@
+mixin banner()
+
+	+b('section').banner
+		+header()
+		+e.wrap
+			+e.titles
+				+e('h2').title Клуб
+				+e('h2').title ЗДОРОВЫХ
+				+e('h2').title волос
+
+			+e('p').text Часто в уходе за волосами мы придерживаемся определенных правил, но всегда четко понимаем для чего они нам вообще нужны.
+			+e.questions
+				+e.question(class='wow rotateInUpLeft')
+					+e('p').item Как часто лучше мыть голову:<br><span>один раз в неделю или один раз в день?</span>
+				+e.question(class='wow rotateInUpRight')
+					+e('p').item Лучше использовать фен<br><span>или можно обойтись и без него?</span>
+				+e.question(class='wow rotateInUpLeft')
+					+e('p').item Модная укладка с кудрями<br><span>или прямые естественные волосы?</span>
+				+e.question(class='wow rotateInUpRight')
+					+e('p').item Кудряшки выпрямить<br><span>или оставить как есть?</span>
+			+e('img')(src='./images/banner-link.png').link
+			+e('p').warning РЕКЛАМА. ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ ПРОКОНСУЛЬТИРУЙТЕСЬ СО СПЕЦИАЛИСТОМ РУ П N011964/02
+		+stories()

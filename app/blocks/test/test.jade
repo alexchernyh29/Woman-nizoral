@@ -1,0 +1,12 @@
+mixin test()
+
+	+b('section').test
+		+e.quiz
+			+e.caption
+				+e('p').title
+				+e('p').number
+			+e.content
+				+e.questions
+				+e.next
+					+e('p').next-text Следующий вопрос
+					+e.arrow

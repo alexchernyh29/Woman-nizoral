@@ -1,0 +1,149 @@
+.test
+	text-align center
+	padding w(120) w(350) w(300) w(300)
+
+	&.hide
+		display none
+
+	+below(768px)
+		padding wm(20) wm(25) wm(150)
+
+	&__caption
+		position relative
+		margin-bottom w(50)
+		+below(768px)
+			margin-bottom wm(50)
+
+	&__title
+		position relative
+		z-index 1
+		font-size w(28)
+		font-family $HelveticaNeueCyrR
+		font-weight bold
+		+below(768px)
+			font-size wm(20)
+			line-height wm(32)
+
+	&__number
+		position absolute
+		top w(-60)
+		left 50%
+		transform translateX(-50%)
+		font-size w(110)
+		font-family $Curbe
+		color #5AB0D4
+		font-weight bold
+		+below(768px)
+			font-size wm(110)
+			top wm(-60)
+
+	&__questions
+		margin-bottom w(50)
+
+		+below(768px)
+			margin-bottom wm(40)
+
+	&__question
+		position relative
+		padding-left w(100)
+		text-align left
+		margin-bottom w(80)
+		cursor pointer
+
+		&:last-child
+			margin-bottom 0
+
+		&.active
+			.test__letter::before
+				opacity 1
+
+		&:hover
+			.test__letter::before
+				opacity .5
+
+		+below(768px)
+			padding-left wm(50)
+			margin-bottom wm(40)
+
+	&__letter
+		position absolute
+		top 50%
+		left 0
+		transform translateY(-50%)
+		font-family $Curbe
+		font-weight bold
+		color #5AB0D4
+		font-size w(84)
+		+below(768px)
+			font-size wm(50)
+		&::before
+			content ''
+			position absolute
+			top 50%
+			left 50%
+			transform translate(-50%, -50%)
+			width w(95)
+			height w(95)
+			border 2px solid #5AB0D4
+			border-radius 50%
+			opacity 0
+			transition opacity .3s
+			+below(768px)
+				width wm(60)
+				height wm(60)
+
+	&__text
+		font-size w(20)
+		font-family $HelveticaNeueCyrR
+		margin-bottom w(15)
+		+below(768px)
+			font-size wm(14)
+			line-height wm(20)
+
+	&__next
+		position relative
+		display inline-block
+		padding-bottom w(20)
+		margin-bottom w(50)
+		cursor pointer
+		opacity 0
+		transition opacity .3s
+
+		&.enabled
+			opacity 1
+
+		&:hover
+			.test__arrow
+				opacity 0
+
+		+below(768px)
+			padding-bottom wm(20)
+			margin-bottom wm(50)
+
+	&__arrow
+		position absolute
+		bottom 0
+		left 45%
+		width w(214)
+		height w(16)
+		background url('../../images/arrow.png') no-repeat center right
+		background-size cover
+		transition opacity .3s
+
+		+below(768px)
+			width wm(214)
+			height wm(16)
+			left 30%
+
+	&__next-text
+		color #5AB0D4
+		font-size w(30)
+		font-family $Curbe
+		font-weight bold
+
+		+below(768px)
+			font-size wm(30)
+
+
+
+

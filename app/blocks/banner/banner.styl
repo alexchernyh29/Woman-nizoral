@@ -1,0 +1,196 @@
+.banner
+
+	&__wrap
+		padding w(30) w(300)
+		position relative
+		display flex
+		flex-flow column nowrap
+		align-items center
+		+below(768px)
+			padding wm(30) wm(15)
+
+	&__titles
+		width w(475)
+		display flex
+		flex-flow column nowrap
+		align-items center
+		margin-bottom w(40)
+		+below(768px)
+			width wm(300)
+			margin-bottom wm(30)
+
+	&__title
+		position relative
+		font-family $Curbe
+		font-size w(96)
+		line-height w(60)
+		font-weight bold
+		+below(768px)
+			font-size wm(70)
+			line-height wm(45)
+
+		&:nth-of-type(1)
+			top w(-5)
+			left w(-140)
+			+below(768px)
+				top wm(-5)
+				left wm(-75)
+
+		&:nth-of-type(2)
+			font-family $Alienscows
+			color #ffffff
+			font-weight normal
+			z-index 2
+
+		&:nth-of-type(3)
+			left w(40)
+			+below(768px)
+				left wm(55)
+
+	&__text
+		width w(620)
+		font-family $HelveticaNeueCyrR
+		font-size w(25)
+		line-height w(32)
+		text-align center
+		+below(768px)
+			width wm(315)
+			font-size wm(18)
+			line-height wm(22)
+
+	&__questions
+		margin w(35) 0 w(20)
+		+below(768px)
+			margin wm(25) 0 w(20)
+
+	&__question
+		position relative
+		padding w(15) 0
+		cursor pointer
+		+below(768px)
+			padding wm(7)
+		& span
+			position relative
+			font-family $Curbe
+			font-weight bold
+		&::before
+			content ''
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+			background url('../../images/banner-question.png') center no-repeat
+			background-size 100% 100%
+
+		&:nth-of-type(1)
+			margin-left w(90)
+			margin-bottom w(40)
+			width w(646)
+			+below(768px)
+				margin-left wm(15)
+				margin-bottom wm(15)
+				width wm(330)
+			& .banner__item
+				padding-left w(80)
+				+below(768px)
+					padding-left wm(35)
+			& span
+				left w(-13)
+				color #F2CB12
+				+below(768px)
+					left wm(6)
+
+		&:nth-of-type(2)
+			margin-left w(210)
+			margin-bottom w(40)
+			width w(603)
+			+below(768px)
+				margin-left wm(45)
+				margin-bottom wm(15)
+				width wm(315)
+			& .banner__item
+				padding-left w(58)
+				+below(768px)
+					padding-left wm(55)
+			& span
+				left w(34)
+				color #5AB0D4
+				+below(768px)
+					left wm(11)
+			&::before
+				transform scaleX(-1)
+
+		&:nth-of-type(3)
+			margin-left w(90)
+			margin-bottom w(35)
+			width w(610)
+			+below(768px)
+				margin-left wm(15)
+				margin-bottom wm(15)
+				width wm(310)
+			& .banner__item
+				padding-left w(55)
+				+below(768px)
+					padding-left wm(37)
+			& span
+				left w(34)
+				color #F2CB12
+				+below(768px)
+					left 0
+
+		&:nth-of-type(4)
+			margin-left w(160)
+			width w(555)
+			+below(768px)
+				margin-left wm(60)
+				width wm(285)
+			& .banner__item
+				padding-left w(50)
+				+below(768px)
+					padding-left wm(32)
+			& span
+				left w(81)
+				color #5AB0D4
+				+below(768px)
+					left wm(40)
+			&::before
+				transform scaleX(-1)
+
+	&__item
+		position relative
+		font-family $HelveticaNeueCyrM
+		font-size w(36)
+		+below(768px)
+			font-size wm(18)
+
+	&__link
+		position fixed
+		width w(235)
+		bottom w(50)
+		right w(20)
+		cursor pointer
+		transition transform .3s
+		z-index 10
+		+below(768px)
+			width wm(60)
+			top wm(235)
+			right 0
+		&:hover
+			transform: scale(1.1)
+
+	&__warning
+		position absolute
+		font-family $HelveticaNeueCyrL
+		top w(1400)
+		left -110%
+		width w(3230)
+		font-size w(30)
+		letter-spacing 0.25em
+		transform rotate(-90deg)
+		+below(768px)
+			top wm(300)
+			left -300%
+			width wm(3230)
+			font-size wm(20)
+			z-index -1

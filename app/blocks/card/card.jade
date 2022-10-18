@@ -1,0 +1,7 @@
+mixin card(data)
+
+	+b.card
+		+e.wrap
+			+e('img')(src=`./images/stories-photo-${data.id}.png`).photo
+			+e('p').theme!= data.theme
+			+e('p').hero!= data.hero

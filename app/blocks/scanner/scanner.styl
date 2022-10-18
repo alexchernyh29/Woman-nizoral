@@ -1,0 +1,34 @@
+.scanner
+	text-align center
+
+	&.hide
+		display none
+
+	&__wrap
+		padding w(10) w(350) w(10) w(300)
+
+		+below(768px)
+			padding wm(50) wm(25)
+
+	&__title
+		font-size w(115)
+		font-family $Alienscows
+		+below(768px)
+			font-size wm(55)
+		& span
+			position relative
+			font-family $Curbe
+			font-weight bold
+			color #5AB0D4
+			font-size w(96)
+			bottom w(50)
+			+below(768px)
+				font-size wm(60)
+
+	&__text
+		font-size w(25)
+		font-family $HelveticaNeueCyrR
+		line-height 1.5
+		+below(768px)
+			font-size wm(18)
+			line-height wm(22)

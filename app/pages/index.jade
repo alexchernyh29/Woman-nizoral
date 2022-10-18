@@ -1,0 +1,26 @@
+extends /blocks/layout-default/layout-default
+
+include /blocks/header/header
+include /blocks/banner/banner
+include /blocks/stories/stories
+include /blocks/card/card
+include /blocks/quote/quote
+include /blocks/expert/expert
+include /blocks/scanner/scanner
+include /blocks/test/test
+include /blocks/answers/answers
+include /blocks/footer/footer
+include /blocks/sharing/sharing
+include /blocks/icon/icon
+
+block head
+	- var pageTitle = 'Woman Nizoral';
+
+block content
+	.top
+		+banner()
+		+scanner()
+		+test()
+		+answers()
+		+footer()
+	.bottom

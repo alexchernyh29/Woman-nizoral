@@ -1,0 +1,45 @@
+.expert
+	position absolute
+	top 0
+	left 0
+	right 0
+	bottom 0
+
+	&__wrap
+		position relative
+		&::after
+			+below(768px)
+				position absolute
+				width wm(540)
+				height wm(175)
+
+	&__letter
+		width 100%
+		height 100%
+		background-color #ffffff
+
+	&__text
+		font-family $HelveticaNeueCyrR
+		font-size w(13)
+		line-height w(18)
+		+below(768px)
+			font-size wm(9)
+			line-height wm(13)
+
+	&__photo
+		position absolute
+		z-index 1
+		cursor pointer
+
+	&__subs
+		position absolute
+		font-family $HelveticaNeueCyrB
+		font-size w(18)
+		cursor pointer
+		+below(768px)
+			font-size wm(11)
+			span
+				display none
+
+	.disable
+		display none

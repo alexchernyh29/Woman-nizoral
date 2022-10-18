@@ -1,0 +1,6 @@
+mixin quote(data)
+
+	+b.quote
+		+e.wrap
+			for item in data.paragraphs
+				+e('p').paragraph!= item

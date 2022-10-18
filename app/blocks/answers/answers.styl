@@ -1,0 +1,121 @@
+.answers
+	text-align center
+	display none
+	&.show
+		display block
+
+	&__wrap
+		position relative
+		padding w(20) w(350) w(50) w(300)
+
+		+below(768px)
+			padding wm(50)
+
+	&__title
+		font-size w(115)
+		font-family $Alienscows
+
+		+below(768px)
+			font-size wm(55)
+			margin-bottom wm(50)
+
+		span
+			position relative
+			font-family $Curbe
+			font-weight bold
+			color #5AB0D4
+			font-size w(96)
+			bottom w(50)
+			left w(50)
+
+			+below(768px)
+				font-size wm(60)
+				margin-left wm(-50)
+
+
+	&__list
+		position relative
+		font-family $HelveticaNeueCyrR
+		text-align center
+		z-index 1
+
+	&__item
+		margin-bottom w(60)
+		&:last-child
+			margin-bottom 0
+
+		+below(768px)
+			margin-bottom wm(100)
+
+	&__caption
+		font-weight bold
+		font-size w(28)
+		padding-bottom w(30)
+
+		+below(768px)
+			font-size wm(20)
+			padding-bottom wm(20)
+
+	&__text
+		font-size w(20)
+		line-height w(26)
+		&:last-child
+			padding-top w(30)
+
+		+below(768px)
+			font-size wm(14)
+			line-height wm(20)
+			padding-bottom wm(20)
+
+	&__btns
+		margin-top w(50)
+		+below(768px)
+			margin-top wm(50)
+
+	&__button
+		display inline-block
+		color #5AB0D4
+		font-size w(30)
+		font-family $Curbe
+		font-weight bold
+		padding w(10) w(80)
+		border 2px solid #344442
+		cursor pointer
+		transition background-color .3s, color .3s
+
+		&:hover
+			color #dedede
+			background-color #5AB0D4
+
+		+below(768px)
+			padding wm(10) wm(80)
+			font-size wm(22)
+
+	&__bg
+		position absolute
+		left 50%
+		transform translateX(-50%)
+
+		&_1
+			top w(550)
+			width w(1299)
+			height w(347)
+			background url('../../images/answers-bg-1.png') no-repeat center
+			background-size cover
+			+below(768px)
+				top wm(640)
+				width wm(402)
+				height wm(168)
+				background-image url('../../images/answers-bg-1-mob.png')
+
+		&_2
+			bottom w(200)
+			width w(1388)
+			height w(371)
+			background url('../../images/answers-bg-2.png') no-repeat center
+			background-size cover
+			+below(768px)
+				bottom wm(600)
+				width wm(402)
+				height wm(181)
+				background-image url('../../images/answers-bg-2-mob.png')

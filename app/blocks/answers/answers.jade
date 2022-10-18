@@ -1,0 +1,11 @@
+mixin answers()
+
+	+b('section').answers
+		+e.wrap
+			+e('p').title ПОСМОТРЕТЬ<br><span>результаты</span>
+			+e.list
+				+e.item
+					+e('p').caption
+					+e('p').text
+			+e.btns
+				+e('buttom').button Пройти еще раз

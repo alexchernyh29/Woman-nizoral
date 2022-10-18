@@ -1,0 +1,636 @@
+.stories
+	&__content
+		position relative
+		height w(4500)
+		display flex
+		flex-flow column nowrap
+		align-items center
+		+below(768px)
+			height wm(4500)
+
+	&__title
+		margin-bottom w(20)
+		font-family $Alienscows
+		font-size w(115)
+		color #ffffff
+		+below(768px)
+			margin-bottom wm(15)
+			font-size wm(55)
+
+	&__text
+		width w(550)
+		font-family $HelveticaNeueCyrR
+		font-size w(25)
+		line-height w(32)
+		text-align center
+		+below(768px)
+			width wm(280)
+			font-size wm(18)
+			line-height wm(22)
+
+	&__decoration
+		position absolute
+		width w(560)
+		height w(520)
+		top w(130)
+		left w(160)
+		z-index -1
+		+below(768px)
+			width wm(205)
+			height wm(190)
+			top wm(130)
+			left wm(290)
+			z-index 5
+
+	&__image
+		width 100%
+
+	&__wrap
+		position absolute
+		top w(90)
+		left w(50)
+		transform rotate(-13.49deg)
+		+below(768px)
+			top wm(30)
+			left wm(10)
+
+	&__copy
+		position relative
+		font-family $Curbe
+		font-size w(35)
+		line-height w(55)
+		font-weight bold
+		text-align center
+		+below(768px)
+			font-size wm(14)
+			line-height wm(14)
+
+		&:nth-of-type(1)
+			top w(-10)
+			color #5AB0D4
+			+below(768px)
+				top 0
+
+		&:nth-of-type(2)
+			font-family $Alienscows
+			color #344442
+			bottom w(35)
+			font-size w(40)
+			font-weight normal
+			z-index 2
+			+below(768px)
+				bottom 0
+				font-size wm(14)
+
+		&:nth-of-type(3)
+			color #5AB0D4
+			bottom w(60)
+			+below(768px)
+				bottom 0
+
+	&__story
+		position relative
+		+below(768px)
+			width 100%
+		&_1 .card
+			width w(490)
+			transform rotate(-8.61deg)
+			left w(-130)
+			top w(30)
+			z-index 2
+			+below(768px)
+				width wm(280)
+				left 10%
+				top wm(10)
+			& .card__theme
+				top w(400)
+				left 50%
+				transform translateX(-50%)
+				+below(768px)
+					top wm(225)
+					width 100%
+					left 60%
+			& .card__hero
+				top w(430)
+				left 33%
+				+below(768px)
+					width 100%
+					top wm(245)
+					left 20%
+
+		&_1 .quote
+			top w(210)
+			left w(-560)
+			z-index 3
+			+below(768px)
+				top wm(210)
+				left wm(-30)
+			& .quote__wrap
+				width w(600)
+				height w(600)
+				+below(768px)
+					width wm(450)
+					height wm(450)
+				&::before
+					background url('../../images/stories-quote-1.png') center no-repeat
+					background-size 100% 100%
+					+below(768px)
+						transform rotate(-12.92deg)
+			& .quote__paragraph
+				width w(450)
+				transform rotate(11.89deg)
+				+below(768px)
+					width wm(325)
+					transform rotate(-2.17deg)
+				&:nth-of-type(1)
+					top w(130)
+					left w(110)
+					+below(768px)
+						top wm(100)
+						left wm(60)
+				&:nth-of-type(2)
+					top w(210)
+					left w(85)
+					+below(768px)
+						top wm(160)
+						left wm(65)
+				&:nth-of-type(3)
+					top w(370)
+					left w(55)
+					+below(768px)
+						top wm(270)
+						left wm(70)
+
+		&_1 .expert
+			top w(500)
+			left w(-10)
+			transform rotate(0.85deg)
+			z-index 3
+			+below(768px)
+				top wm(255)
+				left 34%
+				transform rotate(0deg)
+				z-index 5
+			& .expert__wrap
+				width w(475)
+				height w(460)
+				+below(768px)
+					width wm(270)
+					height wm(345)
+			& .expert__letter
+				padding w(65) 0 0 w(60)
+				+below(768px)
+					padding wm(20) 0 0 wm(25)
+
+
+			& .expert__text
+				width w(370)
+				+below(768px)
+					width wm(215)
+
+			& .expert__photo
+				width w(235)
+				top 0
+				right 0
+				transform translate(45%, -35%)
+				+below(768px)
+					width wm(140)
+					top 100%
+					right 100%
+
+			& .expert__subs
+				display inline-block
+				padding w(10)
+				top w(15)
+				left w(20)
+				background-color #FFCC00
+				text-align center
+				+below(768px)
+					display inline-block
+					padding wm(10)
+					transform rotate(0)
+					top 95%
+					left 0
+					width 100%
+
+		&_2 .card
+			width w(460)
+			left w(-500)
+			top w(800)
+			+below(768px)
+				width wm(295)
+				left 10%
+				top wm(650)
+
+			& .card__theme
+				top w(420)
+				left 20%
+				+below(768px)
+					top wm(270)
+					left 15%
+
+			& .card__hero
+				top w(450)
+				left 34%
+				+below(768px)
+					top wm(290)
+					left 34%
+
+		&_2 .quote
+			top w(980)
+			left w(-160)
+			z-index 3
+			+below(768px)
+				top wm(930)
+				left wm(-45)
+				z-index -1
+			& .quote__wrap
+				width w(610)
+				height w(610)
+				+below(768px)
+					width wm(470)
+					height wm(435)
+				&::before
+					background url('../../images/stories-quote-2.png') center no-repeat
+					background-size 100% 100%
+			& .quote__paragraph
+				width w(330)
+				transform rotate(-2.46deg)
+				+below(768px)
+					width wm(240)
+					transform rotate(-0.35deg)
+				&:nth-of-type(1)
+					top w(125)
+					left w(155)
+					+below(768px)
+						top wm(75)
+						left wm(145)
+				&:nth-of-type(2)
+					top w(340)
+					left w(160)
+					+below(768px)
+						top wm(240)
+						left wm(145)
+				&:nth-of-type(3)
+					top w(430)
+					left w(165)
+					+below(768px)
+						top wm(300)
+						left wm(145)
+
+		&_2 .expert
+			top w(1270)
+			left w(-590)
+			transform rotate(-1.58deg)
+			z-index 3
+			+below(768px)
+				top wm(1000)
+				left 34%
+				transform rotate(0deg)
+				z-index 5
+			& .expert__wrap
+				width w(405)
+				height w(485)
+				+below(768px)
+					width wm(270)
+					height wm(345)
+			& .expert__letter
+				padding w(35) 0 0 w(60)
+				+below(768px)
+					padding wm(20) 0 0 wm(25)
+			& .expert__text
+				width w(310)
+				+below(768px)
+					width wm(230)
+			& .expert__photo
+				width w(235)
+				top w(-80)
+				left w(-70)
+				+below(768px)
+					width wm(140)
+					top 90%
+					left -25%
+			& .expert__subs
+				display inline-block
+				padding w(10)
+				transform rotate(-90deg)
+				top w(175)
+				left w(-125)
+				background-color #FFCC00
+				text-align center
+				+below(768px)
+					display inline-block
+					padding wm(10)
+					transform rotate(0)
+					top 95%
+					left 0
+					width 100%
+
+
+		&_3 .card
+			width w(553)
+			left w(-350)
+			top w(1540)
+			transform rotate(-6.74deg)
+			z-index 2
+			+below(768px)
+				width wm(340)
+				left 0
+				top wm(1400)
+
+			& .card__theme
+				top w(470)
+				left 50%
+				transform translateX(-35%)
+				+below(768px)
+					top wm(290)
+					left 25%
+					transform translateX(0)
+					width 100%
+
+			& .card__hero
+				top w(500)
+				left 36%
+				+below(768px)
+					top wm(310)
+					left 35%
+
+		&_3 .quote
+			top w(2000)
+			left w(-500)
+			z-index 3
+			+below(768px)
+				top wm(1720)
+				left wm(-30)
+				z-index 3
+			& .quote__wrap
+				width w(620)
+				height w(635)
+				+below(768px)
+					width wm(470)
+					height wm(530)
+				&::before
+					background url('../../images/stories-quote-3.png') center no-repeat
+					background-size 100% 100%
+			& .quote__paragraph
+				width w(395)
+				transform rotate(10.04deg)
+				top w(150)
+				left w(100)
+				+below(768px)
+					width wm(285)
+					top wm(100)
+					left wm(80)
+
+		&_3 .expert
+			top w(1700)
+			left w(200)
+			transform rotate(-1.58deg)
+			+below(768px)
+				top wm(1900)
+				left 34%
+				transform rotate(0deg)
+				z-index 5
+			& .expert__wrap
+				width w(336)
+				height w(462)
+				+below(768px)
+					width wm(270)
+					height wm(345)
+			& .expert__letter
+				padding w(80) 0 0 w(40)
+				+below(768px)
+					padding wm(50) 0 0 wm(25)
+
+			& .expert__text
+				width w(282)
+				+below(768px)
+					width wm(230)
+
+			& .expert__photo
+				width w(235)
+				top w(-80)
+				left 50%
+				transform translateX(-50%)
+				+below(768px)
+					width wm(140)
+					top 90%
+					left 0
+
+			& .expert__subs
+				display inline-block
+				padding w(10)
+				top w(30)
+				left 11%
+				background-color #FFCC00
+				text-align center
+				z-index 2
+				+below(768px)
+					display inline-block
+					padding wm(10)
+					transform rotate(0)
+					top 95%
+					left 0
+					width 100%
+
+		&_4 .card
+			width w(595)
+			left 0
+			top w(2190)
+			+below(768px)
+				width wm(465)
+				left -5%
+				top wm(2300)
+
+			& .card__theme
+				top w(400)
+				left 35%
+				+below(768px)
+					top wm(310)
+					left 30%
+
+			& .card__hero
+				top w(430)
+				left 25%
+				+below(768px)
+					top wm(330)
+					left 25%
+
+		&_4 .quote
+			top w(2420)
+			left w(-420)
+			z-index 4
+			+below(768px)
+				top wm(2625)
+				left -25%
+				z-index 4
+			& .quote__wrap
+				width w(605)
+				height w(585)
+				+below(768px)
+					width wm(635)
+					height wm(605)
+				&::before
+					background url('../../images/stories-quote-4.png') center no-repeat
+					background-size 110% 110%
+					+below(768px)
+						transform rotate(96.58deg)
+			& .quote__paragraph
+				width w(440)
+				transform rotate(-3.32deg)
+				top w(180)
+				left w(100)
+				+below(768px)
+					width wm(255)
+					transform rotate(0)
+					top wm(100)
+					left wm(190)
+					font-size wm(13)
+					line-height wm(16)
+
+		&_4 .expert
+			top w(2660)
+			left w(150)
+			transform rotate(5.13deg)
+			+below(768px)
+				top wm(2900)
+				left 34%
+				transform rotate(0deg)
+				z-index 5
+			& .expert__wrap
+				width w(420)
+				height w(400)
+				+below(768px)
+					width wm(270)
+					height wm(345)
+			& .expert__letter
+				padding w(80) 0 0 w(50)
+				+below(768px)
+					padding wm(50) 0 0 wm(25)
+
+			& .expert__text
+				width w(350)
+				+below(768px)
+					width wm(230)
+
+			& .expert__photo
+				width w(235)
+				top w(-40)
+				right -26%
+				+below(768px)
+					width wm(140)
+					top 90%
+					left -25%
+
+			& .expert__subs
+				display inline-block
+				padding w(10)
+				top w(30)
+				left 17%
+				background-color #FFCC00
+				text-align center
+				+below(768px)
+					display inline-block
+					padding wm(10)
+					transform rotate(0)
+					top 95%
+					left 0
+					width 100%
+
+
+		&_5 .card
+			width w(515)
+			left w(-420)
+			top w(2800)
+			z-index 2
+			+below(768px)
+				width wm(375)
+				left 0
+				top wm(3250)
+				z-index 2
+			& .card__theme
+				top w(570)
+				left 30%
+				+below(768px)
+					top wm(410)
+					left 22%
+
+			& .card__hero
+				top w(600)
+				left 34%
+				+below(768px)
+					top wm(435)
+					left 36%
+
+		&_5 .quote
+			top w(2980)
+			left w(10)
+			+below(768px)
+				top wm(3670)
+				left 0
+			& .quote__wrap
+				width w(605)
+				height w(585)
+				+below(768px)
+					width wm(430)
+					height wm(440)
+				&::before
+					background url('../../images/stories-quote-5.png') center no-repeat
+					background-size 100% 100%
+			& .quote__paragraph
+				width w(415)
+				top w(200)
+				left w(100)
+				+below(768px)
+					width wm(290)
+					top wm(120)
+					left wm(80)
+
+		&_5 .expert
+			top w(3450)
+			left w(-450)
+			transform rotate(-7.53deg)
+			+below(768px)
+				top wm(3710)
+				left 34%
+				transform rotate(0deg)
+				z-index 5
+			& .expert__wrap
+				width w(420)
+				height w(400)
+				+below(768px)
+					width wm(270)
+					height wm(345)
+			& .expert__letter
+				padding w(80) 0 0 w(50)
+				+below(768px)
+					padding wm(50) 0 0 wm(25)
+
+			& .expert__text
+				width w(340)
+				+below(768px)
+					width wm(230)
+
+			& .expert__photo
+				width w(235)
+				top w(-50)
+				left -28%
+				+below(768px)
+					width wm(140)
+					top 90%
+					left -25%
+
+			& .expert__subs
+				display inline-block
+				padding w(10)
+				top w(30)
+				left 12%
+				background-color #FFCC00
+				text-align center
+				+below(768px)
+					display inline-block
+					padding wm(10)
+					transform rotate(0)
+					top 95%
+					left 0
+					width 100%

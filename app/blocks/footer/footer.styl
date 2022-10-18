@@ -1,0 +1,85 @@
+.footer
+	position relative
+	padding w(10) w(15) w(30)
+	text-align center
+	display none
+	&.show
+		display block
+	+below(768px)
+		padding wm(80) wm(15) wm(30)
+		background url('../../images/footer-stars-mob.png') no-repeat top left
+		background-size wm(109) wm(181)
+
+	&::before
+		content ''
+		position absolute
+		bottom 0
+		right 0
+		width w(410)
+		height w(381)
+		background url('../../images/footer-bg-2.png') no-repeat center
+		background-size cover
+		+below(768px)
+			width wm(402)
+			height wm(384)
+			bottom wm(100)
+			right 57%
+			transform translateX(50%)
+
+	&::after
+		content ''
+		position absolute
+		bottom 0
+		left 0
+		width w(301)
+		height w(303)
+		background url('../../images/footer-bg-1.png') no-repeat center
+		background-size cover
+		+below(768px)
+			width wm(157)
+			height wm(266)
+			background url('../../images/footer-bg-1-mob.png') no-repeat center
+			background-size cover
+			left auto
+			right -9%
+
+	&__wrap
+		transform rotate(-1deg)
+
+	&__copy
+		position relative
+		font-family $Curbe
+		font-size w(35)
+		line-height w(60)
+		font-weight bold
+		+below(768px)
+			font-size wm(35)
+			line-height wm(60)
+
+		&:nth-of-type(1)
+			top w(-5)
+			color #5AB0D4
+			+below(768px)
+				top wm(-5)
+
+
+		&:nth-of-type(2)
+			font-family $Alienscows
+			font-size w(40)
+			color #344442
+			bottom w(40)
+			font-weight normal
+			z-index 2
+			+below(768px)
+				font-size wm(40)
+				bottom wm(45)
+
+		&:nth-of-type(3)
+			left w(10)
+			color #5AB0D4
+			bottom w(70)
+			+below(768px)
+				bottom wm(60)
+				left wm(10)
+
+

@@ -1,0 +1,8 @@
+mixin expert(data)
+
+	+b.expert
+		+e.wrap
+			+e.letter.disable
+				+e('p').text!= data
+			+e('p').subs Комментарий <span>врача-</span>трихолога
+			+e('img')(src='./images/stories-expert.png').photo

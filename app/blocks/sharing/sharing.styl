@@ -1,0 +1,47 @@
+.sharing
+	margin-top w(10)
+	position relative
+	display flex
+	flex-flow row nowrap
+	justify-content center
+	align-items center
+	width 100%
+	z-index 10
+	+below(768px)
+		margin-top wm(400)
+
+	&__list
+		display flex
+		flex-wrap nowrap
+
+	&__item
+		display inline-block
+		margin-right w(22)
+		width w(47)
+		height w(47)
+		border 1px solid #344442
+		border-radius 50%
+		transition background-color .3s
+		&:last-of-type
+			margin-right 0
+		&:hover
+			background-color #344442
+			svg
+				fill #dfdfdf
+
+		+below(768px)
+			margin-right wm(22)
+			width wm(47)
+			height wm(47)
+
+	&__link
+		display flex
+		justify-content center
+		align-items center
+		width 100%
+		height 100%
+		svg
+			width 60%
+			height auto
+			fill #344442
+			transition fill .3s
